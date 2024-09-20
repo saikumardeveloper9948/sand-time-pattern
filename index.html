@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h4>1) Write a program to print sand timer</h4>
+
+
+    <pre>        * * * * * 
+         * * * * 
+          * * * 
+           * * 
+            * 
+           * * 
+          * * * 
+         * * * * 
+        * * * * *  
+        
+    
+    </pre>
+
+
+        <h2>2) Write a program to print rhombus</h2>
+        <pre>
+                1 
+               1 2 
+              1 2 3 
+             1 2 3 4 
+            1 2 3 4 5 
+             1 2 3 4 
+              1 2 3 
+               1 2
+                1
+        </pre>
+    <script>
+        //  sand time
+
+// * * * * * 
+//  * * * * 
+//   * * * 
+//    * * 
+//     * 
+//    * * 
+//   * * * 
+//  * * * * 
+// * * * * * 
+
+
+rows=5
+for(i=1;i<=2*rows-1;i++){
+    cols=(i<=rows)?rows-i+1:i-rows+1
+    space=(i<=rows)?i-1:2*rows-1-i
+    res=""
+    for(k=1;k<=space;k++){
+        res+=" "
+    }
+    for(j=1;j<=cols;j++){
+        res+="* "
+    }
+    console.log(res)
+}
+
+
+
+        //      1 
+        //     1 2 
+        //    1 2 3 
+        //   1 2 3 4 
+        //  1 2 3 4 5 
+        //   1 2 3 4 
+        //    1 2 3 
+        //     1 2
+        //      1
+
+
+
+row1=5
+for(i=1;i<=2*row1-1;i++){
+    res=""
+    cols=(i <= row1)?i:2*row1-i
+    gap = (i <= row1)?row1-i: i-row1
+
+    for(k=1;k<=gap;k++){
+        res+=" "
+    }
+    for(j=1;j<=cols;j++){
+        res+=j+" "
+    }
+    console.log(res)
+}
+    </script>
+</body>
+</html>
